@@ -50,6 +50,7 @@ main > img {
   padding: 28px 26px 10px 25px;
   font-size: 0.8em;
   line-height: 1.47;
+  position: relative;
 }
 
 .content > p {
@@ -73,7 +74,8 @@ main > img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
+  /* display: none; */
 }
 
 .writer-left {
@@ -118,14 +120,36 @@ main > img {
   background-color: hsl(217, 19%, 35%);
   border-radius: 0 0 8px 8px;
   color: white;
-  padding: 8px 26px 5px 25px;
+  padding: 5px 26px 5px 25px;
   justify-content: space-between;
   align-items: center;
-  height: 55px;
-  /* display: none; */
+  height: 53px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.share-div-left {
+  display: flex;
+  gap: 12px;
+}
+
+.share-div p {
+  /* font-style: oblique; */
 }
 
 .share-div img {
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 16px;
+}
+
+.share-div .share-icon-div {
+  background-color: hsl(214, 17%, 51%);
+}
+
+.share-div #share-icon {
+  filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(20%)
+    hue-rotate(199deg) brightness(104%) contrast(101%);
 }
