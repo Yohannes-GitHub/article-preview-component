@@ -52,18 +52,13 @@ main > img {
 .content {
   font-size: 0.8em;
   line-height: 1.47;
+  padding-left: 31px;
+  padding-right: 32px;
   position: relative;
 }
 
 .content > p {
   margin-bottom: 10px;
-}
-
-#first-text,
-#second-text,
-.writer-div {
-  margin-left: 31px;
-  margin-right: 32px;
 }
 
 #first-text {
@@ -91,10 +86,6 @@ main > img {
   justify-content: space-between;
   align-items: center;
   /* display: none; */
-}
-
-.share-div {
-  /* display: none !important; */
 }
 
 .writer-left {
@@ -144,10 +135,10 @@ main > img {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  position: absolute;
+  /* position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .share-div-left {
@@ -237,38 +228,55 @@ Media Queries
 
 @media (min-width: 992px) {
   main {
-    max-width: 417px;
-    font-size: x-large;
+    flex-direction: row;
+    max-width: 740px;
+    font-size: 1.4rem;
   }
 
   main > img {
-    height: 210px;
+    border-radius: 8px 0 0 8px;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .content {
+    padding-left: 36px;
+    padding-right: 40px;
   }
 
   #first-text {
-    margin-bottom: 20px;
+    font-size: 1.14em;
+    margin-bottom: 12px;
   }
 
   #second-text {
-    margin-bottom: 23px;
+    font-size: 0.75em;
+    margin-bottom: 12px;
+  }
+
+  .writer-div {
+    padding-top: 5px;
+    margin-bottom: 30px;
   }
 
   .share-icon-div {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
   }
 
   #share-icon {
-    width: 18px;
-    height: 16px;
+    width: 15px;
+    height: 13px;
   }
 
   .share-div {
     height: 70px;
+    /* display: none !important; */
+    width: 200px;
   }
 
   .share-div-left {
-    gap: 20px;
+    gap: 10px;
   }
 
   .share-div img {
