@@ -71,7 +71,6 @@ main > img {
   margin-bottom: 13px;
   font-family: ManropeBold, "sans-serif";
   font-weight: 500;
-  /* font-size: 1.5em; */
 }
 
 #second-text {
@@ -85,22 +84,12 @@ main > img {
 }
 
 .writer-div {
-  padding-top: 17px;
+  padding-top: 18px;
   margin-bottom: 19px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* display: none; */
 }
-
-/* .share-div {
-  display: none !important;
-}
-
-.share-icon-div {
-  bottom: 16px;
-  bottom: 23px;
-} */
 
 .writer-left {
   display: flex;
@@ -135,6 +124,8 @@ main > img {
   height: 32px;
   position: absolute;
   right: 32px;
+  bottom: 23px;
+  /* display: none; */
 }
 
 .share-icon-div-colored {
@@ -160,7 +151,7 @@ main > img {
   border-radius: 0 0 8px 8px;
   color: white;
   padding: 5px 32px 5px 31px;
-  margin-top: 22px;
+  margin-top: 18px;
   justify-content: space-between;
   align-items: center;
   height: 64px;
@@ -225,7 +216,7 @@ Media Queries
   .share-icon-div {
     width: 36px;
     height: 36px;
-    bottom: 17px;
+    bottom: 27px;
   }
 
   #share-icon {
@@ -302,7 +293,7 @@ Media Queries
   .share-icon-div {
     width: 32px;
     height: 32px;
-    bottom: 36px;
+    bottom: 34px;
     right: 45px;
   }
 
@@ -312,14 +303,30 @@ Media Queries
   }
 
   .share-div {
-    height: 50px;
-    width: 220px;
+    height: 55px;
+    width: 245px;
     position: absolute;
     border-radius: 8px;
-    bottom: 90px;
-    right: -50px;
+    bottom: 92px;
+    right: -13.5%;
     justify-content: center;
+    padding: 0 10px;
     /* display: none !important; */
+  }
+
+  .share-div::after {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid hsl(217, 19%, 35%) 1px solid hsl(217, 19%, 35%) 1px solid
+      hsl(217, 19%, 35%) 1px solid hsl(217, 19%, 35%);
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    content: "";
+    transform: rotate(45deg);
+    margin-top: -8px;
+    background: hsl(217, 19%, 35%);
   }
 
   .share-div-left {
@@ -329,6 +336,7 @@ Media Queries
   .share-div img {
     width: 20px;
     height: 20px;
+    margin-right: 5px;
   }
 
   #twitter-icon {
